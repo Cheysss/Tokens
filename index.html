@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Active and Passive Tokens</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="particles-bg"></div>
+    
+  <div class="cursor-coin">
+    <i class="fas fa-coins"></i>
+  </div>
+  
+  <div class="animated-bg">
+    <i class="fas fa-coins"></i>
+    <i class="fas fa-coins"></i>
+    <i class="fas fa-coins"></i>
+    <i class="fas fa-coins"></i>
+    <i class="fas fa-coins"></i>
+    <i class="fas fa-coins"></i>
+    <i class="fas fa-coins"></i>
+    <i class="fas fa-coins"></i>
+  </div>
+
+  <nav>
+    <div class="brand"><i class="fas fa-coins"></i>A&P-Tokens</div>
+    <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">HOME</a>
+      <a href="#discussion">DISCUSSION</a>
+      <a href="#articles">ARTICLES</a>
+      <a href="#reflection">REFLECTION</a>
+      <a href="#about">ABOUT</a>
+    </div>
+  </nav>
+
+  <section id="home" class="home-section">
+    <div class="home-content">
+      <h1>PASSIVE AND ACTIVE TOKENS</h1>
+      <p>Understanding the heart of authentication: explore how passive and active tokens secure modern applications and user sessions.</p>
+      
+      <div class="video-wrapper">
+        <button id="playBtn"><i class="fas fa-play-circle"></i> Watch Overview</button>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="home-image">
+      <img src="img/log.png" alt="Token Logo" class="logo" />
+    </div>
+  </section>
+  
+  <section id="discussion" class="discussion-section">
+    <div class="container">
+      <h2><i class="fas fa-key"></i> Discussion: Active vs. Passive Tokens</h2>
+      <p class="intro">
+        In authentication systems, tokens are used to validate a user's identity across services. These tokens can be broadly categorized into two types: <strong>Active</strong> and <strong>Passive</strong> tokens. Let's break them down.
+      </p>
+  
+      <div class="token-card">
+        <div class="text">
+          <h3>Active Tokens</h3>
+          <p>
+            Active tokens are retrieved via backend-to-backend communication. They usually require an application to authenticate (e.g., via OAuth2) and receive a token that can be used to access APIs or resources.
+          </p>
+          <ul>
+            <li>Used in server-to-server authentication.</li>
+            <li>Issued after secure client authentication.</li>
+            <li>Examples: OAuth 2.0 tokens, JWTs used by APIs.</li>
+            <li>Stored securely (often in memory or a token store).</li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="img/token1.png" alt="Active Token" />
+        </div>
+      </div>
+  
+      <div class="token-card reverse">
+        <div class="text">
+          <h3>Passive Tokens</h3>
+          <p>
+            Passive tokens are embedded in protocols such as SAML and are often transferred via the user’s browser. They work as part of web-based single sign-on systems.
+          </p>
+          <ul>
+            <li>Used in browser-based SSO scenarios.</li>
+            <li>Transmitted via redirects and browser interactions.</li>
+            <li>Examples: SAML assertions, WS-Federation tokens.</li>
+            <li>Do not require direct backend communication.</li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="img/token2.jpg" alt="Passive Token" />
+        </div>
+      </div>
+  
+      <div class="conclusion">
+        <h4>Key Differences:</h4>
+        <ul>
+          <li><strong>Transport:</strong> Active uses backend transport; Passive uses browser redirects.</li>
+          <li><strong>Usage:</strong> Active is ideal for API access; Passive fits best in SSO workflows.</li>
+          <li><strong>Security:</strong> Active tokens are more secure due to direct exchange.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Place this after your Discussion section -->
+  <section id="articles" class="articles-section">
+    <div class="container">
+      <h2><i class="fas fa-newspaper"></i> Related Articles on Active & Passive Tokens</h2>
+      <div class="articles-grid">
+        <!-- Article 1 -->
+        <div class="article-card">
+          <img src="img/art1.png" alt="Active vs Passive Authentication">
+          <h3>Active vs. Passive Authentication: Which One is Best?</h3>
+          <p class="date">January 9, 2024</p>
+          <a href="https://www.pindrop.com/article/active-vs-passive-authentication/" target="_blank" class="btn">Read More</a>
+        </div>
+        <!-- Article 2 -->
+        <div class="article-card">
+          <img src="img/art2.png" alt="Authentication Tokens">
+          <h3>Authentication Tokens: Passive vs Active</h3>
+          <p class="date">September 2019</p>
+          <a href="https://cryptosmith.com/wp-content/uploads/2019/09/rs09rev1.pdf" target="_blank" class="btn">Read More</a>
+        </div>
+        <!-- Article 3 -->
+        <div class="article-card">
+          <img src="img/art3.png" alt="Active Authentication">
+          <h3>Active Authentication Explained</h3>
+          <p class="date">2023</p>
+          <a href="https://trustdecision.com/riskopedia/active-authentication" target="_blank" class="btn">Read More</a>
+        </div>
+        <!-- Article 4 -->
+        <div class="article-card">
+          <img src="img/art4.png" alt="ADFS Authentication Flow">
+          <h3>ADFS Authentication Flow</h3>
+          <p class="date">2024</p>
+          <a href="https://office365concepts.com/adfs-authentication-flow/" target="_blank" class="btn">Read More</a>
+        </div>
+        <!-- Article 5 -->
+        <div class="article-card">
+          <img src="img/art5.png" alt="Active and Passive Federation in WIF">
+          <h3>Active and Passive Federation in WIF</h3>
+          <p class="date">2010</p>
+          <a href="https://stackoverflow.com/questions/2775203/active-and-passive-federation-in-wif" target="_blank" class="btn">Read More</a>
+        </div>
+        <!-- Article 6 -->
+        <div class="article-card">
+          <img src="img/art6.png" alt="Active and Passive Authentication in ADFS">
+          <h3>Active and Passive Authentication in ADFS</h3>
+          <p class="date">2021</p>
+          <a href="https://www.youtube.com/watch?v=lOoGkn2aqUk" target="_blank" class="btn">Watch Video</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Reflection Section -->
+  <section id="reflection" class="reflection-section">
+    <div class="container">
+      <h2><i class="fas fa-book"></i> Reflection: What I’ve Learned</h2>
+      <p>
+        Throughout my exploration of Active and Passive Tokens, I’ve gained a deeper understanding of how these tokens play a crucial role in securing user sessions and authentication in modern applications.
+      </p>
+      <p>
+        Active tokens, such as OAuth 2.0 and JWT, are crucial for backend-to-backend authentication, ensuring secure API access. In contrast, Passive tokens, often used in Single Sign-On (SSO) scenarios, offer seamless user experiences across multiple platforms. The balance between these two types of tokens is essential for developing secure and user-friendly authentication systems.
+      </p>
+      <p>
+        Understanding these tokens not only expands my technical knowledge but also helps me make informed decisions when designing authentication systems in future projects.
+      </p>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2><i class="fas fa-user"></i> About Me</h2>
+      <div class="about-content">
+        <!-- Picture and Information -->
+        <div class="about-info">
+          <img src="img/pfp.png" alt="Your Picture" class="profile-img" />
+          <div class="info">
+            <h3>Marc Kenji A. Sual</h3>
+            <p>Age: 20 | Sex: Male | Course: BSIT | Year: 3rd Year</p>
+          </div>
+        </div>
+        <div class="description">
+          <p>
+            Hello, I'm Marc Kenji A. Sual! I'm currently pursuing a Bachelor of Information Technology at Gingoog City Colleges. I'm passionate about technology, and I love working on projects like developing systems and learning more about how tech impacts the world around us. I'm also enjoying playing online games like Mobile Legends in my free time.
+          </p>
+        </div>
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://www.facebook.com/yourprofile" target="_blank" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://t.me/yourprofile" target="_blank" class="social-icon">
+            <i class="fab fa-telegram"></i>
+          </a>
+          <a href="https://www.instagram.com/yourprofile" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
