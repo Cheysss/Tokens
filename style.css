@@ -224,7 +224,7 @@
   
   .home-content p {
     font-size: 1.1rem;
-    color: #333;
+    color: white;
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.6;
@@ -763,5 +763,112 @@
 
   .description {
     font-size: 1rem;
+  }
+}
+
+/* Enhanced Real World Examples */
+.real-world-examples {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.real-world-examples h3 {
+  color: #1e3a8a;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #2563eb;
+}
+
+.example-dropdown {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.example-dropdown:hover {
+  transform: translateY(-2px);
+}
+
+.dropdown-btn {
+  width: 100%;
+  padding: 1.2rem 2rem;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-btn i:first-child {
+  font-size: 1.3rem;
+  margin-right: 1rem;
+  width: 25px;
+  text-align: center;
+}
+
+/* Ensure smooth dropdown animation */
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 2rem;
+}
+
+.dropdown-content.active {
+  max-height: 500px; /* Adjust based on your content */
+  padding: 0 2rem 1.5rem;
+}
+
+/* Fix icon alignment */
+.dropdown-btn i.fa-chevron-down {
+  transition: transform 0.3s ease;
+  margin-left: auto; /* Pushes icon to the right */
+}
+
+.dropdown-content p {
+  font-weight: 600;
+  color: #1e3a8a;
+  padding: 1.5rem 2rem 0;
+}
+
+.dropdown-content ul {
+  padding: 0 2rem 1.5rem;
+  list-style-type: disc;
+}
+
+.dropdown-content li {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #2563eb;
+  font-weight: 600;
+  list-style-type: none;
+  margin-left: -1.3rem;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed #ccc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dropdown-btn {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .dropdown-content p,
+  .dropdown-content ul {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
