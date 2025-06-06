@@ -107,6 +107,138 @@
           <li><strong>Security:</strong> Active tokens are more secure due to direct exchange.</li>
         </ul>
       </div>
+
+      <div class="real-world-examples">
+  <h3><i class="fas fa-globe"></i> Real-World Applications</h3>
+  
+  <div class="example-dropdown">
+    <button class="dropdown-btn" onclick="toggleDropdown(this)">
+      <i class="fab fa-google"></i> Google Single Sign-On (SSO)
+      <i class="fas fa-chevron-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <p>When using "Sign in with Google" across multiple services:</p>
+      <ul>
+        <li><strong>Passive Token:</strong> SAML assertion passed through browser redirects</li>
+        <li>No direct server communication after initial authentication</li>
+        <li>Enables seamless login to YouTube, Gmail, and third-party apps</li>
+        <li class="highlight">Key Benefit: Eliminates multiple password entries</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="example-dropdown">
+    <button class="dropdown-btn" onclick="toggleDropdown(this)">
+      <i class="fas fa-mobile-alt"></i> Banking App Transactions
+      <i class="fas fa-chevron-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <p>When transferring money through your banking app:</p>
+      <ul>
+        <li><strong>Active Token:</strong> OAuth 2.0 token generated after login</li>
+        <li>Each API call to process transactions uses this token</li>
+        <li>Token validated with each server request for security</li>
+        <li class="highlight">Key Benefit: Secure financial operations</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="example-dropdown">
+    <button class="dropdown-btn" onclick="toggleDropdown(this)">
+      <i class="fab fa-amazon"></i> Amazon Checkout Process
+      <i class="fas fa-chevron-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <p>When completing a purchase on Amazon:</p>
+      <ul>
+        <li><strong>Passive:</strong> Cart data passed to payment processor via browser</li>
+        <li><strong>Active:</strong> Payment confirmation via direct API calls with JWTs</li>
+        <li>Combination ensures both convenience and security</li>
+        <li class="highlight">Key Benefit: Fraud prevention while maintaining usability</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="example-dropdown">
+    <button class="dropdown-btn" onclick="toggleDropdown(this)">
+      <i class="fas fa-hospital"></i> Healthcare Portal Access
+      <i class="fas fa-chevron-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <p>When accessing electronic medical records:</p>
+      <ul>
+        <li><strong>Active Token:</strong> HIPAA-compliant JWT for API access</li>
+        <li>Strict token expiration policies (often 15-30 minutes)</li>
+        <li>Multi-factor authentication often required</li>
+        <li class="highlight">Key Benefit: Meets strict healthcare security requirements</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="example-dropdown">
+    <button class="dropdown-btn" onclick="toggleDropdown(this)">
+      <i class="fab fa-microsoft"></i> Office 365 Document Collaboration
+      <i class="fas fa-chevron-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <p>When co-editing documents in real-time:</p>
+      <ul>
+        <li><strong>Passive:</strong> WS-Federation tokens for initial authentication</li>
+        <li><strong>Active:</strong> Graph API tokens for real-time updates</li>
+        <li>Token refresh every 60 minutes for continuous access</li>
+        <li class="highlight">Key Benefit: Secure real-time collaboration</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="example-dropdown">
+    <button class="dropdown-btn" onclick="toggleDropdown(this)">
+      <i class="fas fa-gamepad"></i> Online Gaming Platforms
+      <i class="fas fa-chevron-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <p>When playing multiplayer games with friends:</p>
+      <ul>
+        <li><strong>Passive:</strong> Session cookies for website login</li>
+        <li><strong>Active:</strong> Dedicated game server tokens</li>
+        <li>Separate tokens for chat, gameplay, and payment systems</li>
+        <li class="highlight">Key Benefit: Prevents cheating while maintaining performance</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="example-dropdown">
+    <button class="dropdown-btn" onclick="toggleDropdown(this)">
+      <i class="fas fa-wifi"></i> Hotel WiFi Authentication
+      <i class="fas fa-chevron-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <p>When connecting to premium hotel WiFi:</p>
+      <ul>
+        <li><strong>Passive:</strong> Browser-based token after room login</li>
+        <li>Token embedded in redirect URLs</li>
+        <li>No active tokens to prevent network abuse</li>
+        <li class="highlight">Key Benefit: Easy guest access with time limitations</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="example-dropdown">
+    <button class="dropdown-btn" onclick="toggleDropdown(this)">
+      <i class="fas fa-robot"></i> IoT Device Communication
+      <i class="fas fa-chevron-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <p>When smart devices talk to cloud services:</p>
+      <ul>
+        <li><strong>Active:</strong> MQTT protocol with JWT authentication</li>
+        <li>Tokens rotated every 24 hours automatically</li>
+        <li>Limited-scope tokens for security</li>
+        <li class="highlight">Key Benefit: Secure device communication at scale</li>
+      </ul>
+    </div>
+  </div>
+</div>
     </div>
   </section>
 
